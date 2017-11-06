@@ -1,1 +1,20 @@
-<h1>Hi, I'm a new Author</h1>
+<%= form_for :authors do |f| %>
+  <p>
+    <%= f.label :'First name' %><br>
+    <%= f.text_field :"First name" %>
+  </p>
+
+  <p>
+    <%= f.label :'Last name' %><br>
+    <%= f.text_field :'Last name' %>
+  </p>
+
+  <p>
+    <%= f.label :'Homepage' %><br>
+    <%= f.text_field :'Homepage' %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
